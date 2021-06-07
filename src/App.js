@@ -16,6 +16,7 @@ import DeleteLetter from './components/DeleteLetter/DeleteLetter'
 import CreateComment from './components/CreateComment/CreateComment'
 import EditComment from './components/EditComment/EditComment'
 import DeleteComment from './components/DeleteComment/DeleteComment'
+// import Home from './components/Home/Home'
 
 class App extends Component {
   constructor (props) {
@@ -154,6 +155,7 @@ class App extends Component {
           <AuthenticatedRoute user={user} exact path='/comments/:commentId/delete-comment/:postId' render={() => (
             <DeleteComment msgAlert={this.msgAlert} user={user}/>
           )} />
+
         </main>
       </Fragment>
     )

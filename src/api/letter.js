@@ -1,6 +1,7 @@
 import apiUrl from '../apiConfig'
 import axios from 'axios'
 
+// show all posts made by users
 export const showLetters = (user) => {
   return axios({
     method: 'GET',
@@ -11,6 +12,7 @@ export const showLetters = (user) => {
   })
 }
 
+// users are able to post notes
 export const createLetter = (letterData, user) => {
   return axios({
     method: 'POST',
@@ -27,6 +29,7 @@ export const createLetter = (letterData, user) => {
   })
 }
 
+// users are able to edit their posts created
 export const editLetter = (letterData, user, id) => {
   return axios({
     method: 'PATCH',
@@ -43,6 +46,7 @@ export const editLetter = (letterData, user, id) => {
   })
 }
 
+// delete posts created by users
 export const deleteLetter = (user, id) => {
   return axios({
     method: 'DELETE',
