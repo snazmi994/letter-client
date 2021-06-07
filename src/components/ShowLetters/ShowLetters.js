@@ -66,7 +66,6 @@ class ShowLetters extends Component {
           {this.state.letters.map(letter => (
             <div key={letter._id}>
               <Card className="text-left">
-                <Card.Header>{letter.owner}</Card.Header>
                 <Card.Body>
                   <Card.Title>{letter.title}</Card.Title>
                   <Card.Text>
@@ -77,7 +76,6 @@ class ShowLetters extends Component {
                   {this.props.user._id === letter.owner ? <Button href={`#/letters/${letter._id}/delete-letter`}>
                  Delete</Button> : ''}
                 </Card.Body>
-                <Card.Footer className="text-muted"></Card.Footer>
               </Card>
             </div>
           ))}

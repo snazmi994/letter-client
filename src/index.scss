@@ -1,9 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
 body {
   background: rgb(255,0,0);
   background-image: url('./image/forrest.jpeg');
-  font-family: 'Creepster';
-  background-repeat: no-repeat;
+font-family: 'Inconsolata', monospace;
+font-size: 50px;
+background-repeat: no-repeat;
   background-size: cover;
+  text-decoration: none;
+ color: #ff0000;
 }
