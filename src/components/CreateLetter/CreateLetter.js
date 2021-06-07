@@ -57,12 +57,12 @@ class CreateLetter extends Component {
       <div>
         <Modal show={this.props.createLetterModal} onHide={this.props.onCreateLetterModalClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Create Letter</Modal.Title>
+            <Modal.Title>I Wish I Could Have Told You</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <div className="row">
               <div className="col-sm-10 col-md-8 mx-auto mt-5">
-                <h3>Create Letter</h3>
+                <h3></h3>
                 <Form onSubmit={this.handleSubmit}>
                   <Form.Group controlId="title">
                     <Form.Label>Dear</Form.Label>
@@ -71,18 +71,18 @@ class CreateLetter extends Component {
                       type="text"
                       name="title"
                       value={title}
-                      placeholder="Enter title"
+                      placeholder="who is this addressed to?"
                       onChange={this.handleChange}
                     />
                   </Form.Group>
                   <Form.Group controlId="body">
-                    <Form.Label>Body</Form.Label>
+                    <Form.Label></Form.Label>
                     <Form.Control
                       required
                       name="body"
                       value={body}
                       type="textarea"
-                      placeholder="body"
+                      placeholder="..?"
                       onChange={this.handleChange}
                     />
                   </Form.Group>

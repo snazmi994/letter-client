@@ -58,32 +58,32 @@ class EditLetter extends Component {
       <div>
         <Modal show={this.props.editLetterModal} onHide={this.props.onEditLetterModalClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Edit Post</Modal.Title>
+            <Modal.Title>Edit Your Letter</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <div className="row">
               <div className="col-sm-10 col-md-8 mx-auto mt-5">
-                <h3>Edit Post</h3>
+                <h3>Actually..</h3>
                 <Form onSubmit={this.handleSubmit}>
                   <Form.Group controlId="title">
-                    <Form.Label>Title</Form.Label>
+                    <Form.Label>who is this addressed to..</Form.Label>
                     <Form.Control
                       required
                       type="text"
                       name="title"
                       value={title}
-                      placeholder="Enter title"
+                      placeholder="Dear"
                       onChange={this.handleChange}
                     />
                   </Form.Group>
                   <Form.Group controlId="body">
-                    <Form.Label>Body</Form.Label>
+                    <Form.Label>edit note below</Form.Label>
                     <Form.Control
                       required
                       name="body"
                       value={body}
                       type="textarea"
-                      placeholder="body"
+                      placeholder="...?"
                       onChange={this.handleChange}
                     />
                   </Form.Group>

@@ -4,8 +4,8 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const authenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#/letters">Letters</Nav.Link>
-    <Nav.Link href="#create-letter">Create Post</Nav.Link>
+    <Nav.Link href="#/letters">Lost Letters</Nav.Link>
+    <Nav.Link href="#create-letter">Create A Letter</Nav.Link>
     <Nav.Link href="#change-password">Change Password</Nav.Link>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
   </Fragment>
@@ -27,7 +27,7 @@ const alwaysOptions = (
 const Header = ({ user }) => (
   <Navbar bg="red" variant="dark" expand="md">
     <Navbar.Brand href="#">
-Letters to the Beyond    </Navbar.Brand>
+Letters I Never Sent    </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">

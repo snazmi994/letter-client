@@ -77,7 +77,7 @@ class ShowLetters extends Component {
                   {this.props.user._id === letter.owner ? <Button href={`#/letters/${letter._id}/delete-letter`}>
                  Delete</Button> : ''}
                 </Card.Body>
-                <Card.Footer className="text-muted">{letter.timestamp}</Card.Footer>
+                <Card.Footer className="text-muted"></Card.Footer>
               </Card>
             </div>
           ))}
@@ -86,7 +86,7 @@ class ShowLetters extends Component {
     }
     return (
       <Fragment>
-        <h1>Show All letters</h1>
+        <h1>Thoughts and Well Wishes</h1>
         {lettersJsx}
       </Fragment>
     )
